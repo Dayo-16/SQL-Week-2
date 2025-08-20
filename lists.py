@@ -1,34 +1,25 @@
-languages = ['Python', 'Swift', 'C++']
-print (languages[-1])
+# Create an empty list
+my_list = []
 
+# Append elements
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
 
-my_list = ['p', 'r','o', 'g', 'r', 'a', 'm', 'i']
-print(my_list[2:5])
-print(my_list[5:])
-print(my_list[:])
+# Insert 15 at the second position (index 1)
+my_list.insert(1, 15)
 
-numbers =[21, 34, 54, 12]
-print("Before Append:", numbers)
-numbers.append(32)
-print("After Append:", numbers)
+# Extend with another list
+my_list.extend([50, 60, 70])
 
-prime_numbers = [2, 3, 5]
-print("List1:", prime_numbers)
-even_numbers = [4, 6, 8]
-print("List2:", even_numbers)
-prime_numbers.extend(even_numbers)
-print("List after append:", prime_numbers)
+# Remove the last element
+my_list.pop()
 
-languages = ['Python', 'Swift', 'C++']
-languages[2] = 'C'
-print (languages)
+# Sort in ascending order
+my_list.sort()
 
-
-languages = ['Python', 'Swift', 'C++', 'Java', 'JavaScript', 'Rust', 'R']
-del languages[1]
-print(languages)
-del languages[-1]
-print(languages)
-
-del languages[0:2]
-print(languages)
+# Find and print the index of 30
+index_of_30 = my_list.index(30)
+print("The list:", my_list)
+print("Index of 30:", index_of_30)
