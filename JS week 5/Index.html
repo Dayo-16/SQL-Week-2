@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Shopping List</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-heading">Welcome to Your Shopping List!</h1>
+        <button id="theme-btn">Change Theme</button>
+    </header>
+
+    <main>
+        <section class="user-info">
+            <p id="user-message">Hello! Let's get started.</p>
+        </section>
+
+        <section class="shopping-list">
+            <h2>Your List:</h2>
+            <div class="input-area">
+                <input type="text" id="item-input" placeholder="Enter an item...">
+                <input type="number" id="price-input" placeholder="Price (£)" step="0.01" min="0">
+                <button id="add-item-btn">Add Item</button>
+            </div>
+            <ul id="list-container">
+                <!-- List items will be dynamically added here -->
+            </ul>
+            <p id="total-display">Total: £0.00</p>
+            <button id="clear-list-btn">Clear Entire List</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
